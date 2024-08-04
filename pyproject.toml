@@ -1,0 +1,43 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+
+requires = [
+  "setuptools",
+]
+
+
+[project]
+description = ""
+name = "triton-pascal-installer"
+version = "1.0.0"
+readme = "README.md"
+
+authors = [
+  { name = "sasha0552", email = "admin@sasha0552.org" },
+]
+
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+  "wheel",
+]
+
+license = { text = "MIT" }
+
+
+[project.scripts]
+install-triton-pascal = "triton_pascal_installer.scripts.install:main"
+
+
+[project.urls]
+Homepage = "https://github.com/sasha0552/triton-pascal-installer"
